@@ -4061,7 +4061,7 @@ li.mobile-menu {
 
 @media (max-width: 575px) {
     .ba_2 .theme_btn {
-        min-width: 165px !important;
+        min-width: 145px !important;
     }
     .buy-button {
         font-size: 12px !important;
