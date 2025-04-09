@@ -1166,7 +1166,7 @@ body button:hover {
 
 .ba_2 {
     background: url("../images/banner-2.png") no-repeat center top;
-    padding: 330px 0 420px;
+    padding: 230px 0 420px;
 }
 
 .ba_2:before {
@@ -4267,7 +4267,7 @@ button.navbar-toggler {
     }
 }
 .ba_2 {
-    background: linear-gradient(135deg, #003479, #0061E2) !important;
+    /* background: linear-gradient(135deg, #003479, #0061E2) !important; */
 }
 .main_header_area {
     padding-top: 20px;
