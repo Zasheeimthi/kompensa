@@ -960,10 +960,10 @@ body button:hover {
 
 .toggle_menu a {
     background-color: transparent;
-    font: 600 18px/27px "Josefin Sans", sans-serif;
+    font: 600 18px/27px "poppins", sans-serif;
     color: #382c4d;
     margin: 0;
-    padding: 13px 25px;
+    padding: 15px;
     display: block;
     position: relative;
     cursor: pointer;
@@ -976,9 +976,7 @@ body button:hover {
     text-align: center;
     color: #fff;
     font-size: 15px;
-    background-image: -moz-linear-gradient(-90deg, #dd81ff 0%, #9570ff 100%);
-    background-image: -webkit-linear-gradient(-90deg, #dd81ff 0%, #9570ff 100%);
-    background-image: -ms-linear-gradient(-90deg, #dd81ff 0%, #9570ff 100%);
+    background: linear-gradient(135deg, #003479, #0061E2) !important;
     box-shadow: 0px 0px 34px 0px rgba(126, 126, 126, 0.35);
     margin-right: 10px;
 }
@@ -4057,158 +4055,207 @@ body button:hover {
     }
 }
 
+li.mobile-menu {
+    display: none !important;
+}
+
 @media (max-width: 575px) {
-    .footer_area .footer_widget.fw_2 {
-        padding-left: 15px;
+    li.login-btn {
+        display: none !important;
     }
-    .powerful_features .screen_col {
-        padding-left: 15px;
-        padding-right: 15px;
+    li.mobile-menu {
+        display: block !important;
     }
-    .powerful_features .screen_conent {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .powerful_features .screen_conent h2 {
+    .banner_area h2 {
         font-size: 30px;
-        line-height: 40px;
-    }
-    .powerful_features .screen_conent h2 b {
-        border: 0;
-        line-height: 1;
-    }
-    .slider_area {
-        padding-top: 100px;
-    }
-    .slider_area .slider .containt_area .text_area h4 {
-        font-size: 25px;
-    }
-    .slider_area .slider .containt_area .text_area p {
-        font-size: 16px;
-        margin-left: 0;
-    }
-    .slider_area .slider .containt_area .text_area .popup-youtube {
-        margin-left: 0;
-    }
-    .slider_area .slider .content .play {
-        margin: 0;
-    }
-    .slider_area .slider .carousel-indicators {
-        display: block;
-        left: 0;
-        top: auto;
-        width: auto;
-        height: auto;
-        bottom: -100px;
-        margin-top: 90px;
-        text-align: center;
-    }
-    .slider_area .slider .carousel-indicators li {
-        display: inline-block;
-    }
-    .blog_single {
-        padding-top: 250px;
-    }
-    .comments_area .comment_row .media_r {
-        margin-left: 0;
+        line-height: 30px;
+        padding-bottom: 20px;
     }
 }
 
+button.navbar-toggler {
+    display: none !important;
+}
+
+.footer_area .footer_widget.fw_2 {
+    padding-left: 15px;
+}
+
+.powerful_features .screen_col {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.powerful_features .screen_conent {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.powerful_features .screen_conent h2 {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.powerful_features .screen_conent h2 b {
+    border: 0;
+    line-height: 1;
+}
+
+.slider_area {
+    padding-top: 100px;
+}
+
+.slider_area .slider .containt_area .text_area h4 {
+    font-size: 25px;
+}
+
+.slider_area .slider .containt_area .text_area p {
+    font-size: 16px;
+    margin-left: 0;
+}
+
+.slider_area .slider .containt_area .text_area .popup-youtube {
+    margin-left: 0;
+}
+
+.slider_area .slider .content .play {
+    margin: 0;
+}
+
+.slider_area .slider .carousel-indicators {
+    display: block;
+    left: 0;
+    top: auto;
+    width: auto;
+    height: auto;
+    bottom: -100px;
+    margin-top: 90px;
+    text-align: center;
+}
+
+.slider_area .slider .carousel-indicators li {
+    display: inline-block;
+}
+
+.blog_single {
+    padding-top: 250px;
+}
+
+.comments_area .comment_row .media_r {
+    margin-left: 0;
+}
+
+
+}
 @media (max-width: 450px) {
     .main_header_area .navbar .navbar-toggler {
         right: 195px;
     }
+    
     .main_header_area .navbar .right_nav li a i:before {
         font-size: 25px;
     }
+    
     .main_header_area .navbar .right_nav li .cart:before {
         top: -5px;
     }
+    
     .main_header_area .navbar .right_nav li.search_dropbown {
         padding: 0 10px;
     }
+    
     .main_header_area .navbar .right_nav li.search_dropbown a i:before {
         font-size: 25px;
     }
+    
     .main_header_area .navbar .right_nav .language_select {
         padding-right: 10px;
     }
+    
     .pf_2 .screen_conent .creating_list li {
         margin: 0 !important;
     }
+    
     .testimonial_area .testimonial_slid .testimonial {
         padding: 30px 15px;
     }
+    
     .testimonial_area .testimonial_slid .testimonial p {
         font-size: 16px;
     }
+    
     .ba_2 .theme_btn {
         display: block;
         margin-bottom: 10px;
         width: 190px;
         margin-left: 0 !important;
     }
+    
     .experience_area .tittle h2 b {
         border: 0;
     }
+    
     .pages_banner h2 {
         font-size: 30px;
         line-height: 40px;
         padding-top: 20px;
     }
+    
     .comments_area .comment_row .media {
         display: block;
         text-align: center;
     }
+    
     .comments_area .comment_row .media .media-body {
         padding-left: 0;
         padding-top: 30px;
     }
+    
     .experience_area .tittle h2 {
         font-size: 21px !important;
     }
 }
-
 @media (max-width: 360px) {
     .banner_area h2 {
         font-size: 25px;
         line-height: 35px;
     }
+    
     .experience_area .tittle h4 i {
         display: block;
         margin: 0;
         margin-bottom: 20px;
     }
+    
     .experience_area .tittle h2 {
         font-size: 20px;
         line-height: 30px;
     }
+    
     .experience_area .tittle h2 b {
         line-height: 28px;
     }
+    
     .pricing_area .nav-tabs li:first-child {
         display: block;
         width: 100%;
     }
+    
     .slider_area .slider .content .play {
         margin-top: 10px;
     }
 }
-
 .ba_2 {
     background: linear-gradient(135deg, #003479, #0061E2) !important;
 }
-
 .main_header_area {
     padding-top: 20px;
 }
-
 span.heading {
     font: 500 20px "spoofTrial-Bold", sans-serif;
     color: #282331;
     display: block;
 }
-
 .screen_conent h5 {
     padding-top: 30px;
     font: 500 20px "spoofTrial-Bold", sans-serif;
@@ -4216,23 +4263,16 @@ span.heading {
     display: block;
 }
 
-
 /*----------------------------------------------------*/
-
 
 /*All CSS call*/
 
-
 /* Bootstrap CSS */
-
 
 /* Icon CSS */
 
-
 /* Extra Plugins CSS */
 
-
 /* Font family link */
-
 
 /*# sourceMappingURL=style.css.map */
