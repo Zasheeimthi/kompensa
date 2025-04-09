@@ -4060,6 +4060,18 @@ li.mobile-menu {
 }
 
 @media (max-width: 575px) {
+    .ba_2 .theme_btn {
+        min-width: 165px !important;
+    }
+    .buy-button {
+        font-size: 12px !important;
+    }
+    table td {
+        padding: 15px;
+        text-align: center;
+        border: 1px solid #ddd;
+        font-size: 14px !important;
+    }
     li.login-btn {
         display: none !important;
     }
