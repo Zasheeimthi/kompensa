@@ -4060,6 +4060,12 @@ li.mobile-menu {
 }
 
 @media (max-width: 575px) {
+    .pages_banner {
+        padding-top: 100px;
+    }
+    img.mbl-lock {
+        display: none;
+    }
     .ba_2 .theme_btn {
         min-width: 145px !important;
     }
