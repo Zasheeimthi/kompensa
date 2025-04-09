@@ -4060,6 +4060,9 @@ li.mobile-menu {
 }
 
 @media (max-width: 575px) {
+    .pf_2 {
+        padding-bottom: 0px;
+    }
     .pages_banner {
         padding-top: 100px;
     }
