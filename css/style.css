@@ -107,6 +107,7 @@ Table of Content:
     text-transform: uppercase;
     min-width: 260px;
     height: 60px;
+    border: transparent;
 }
 
 .theme_btn:hover,
