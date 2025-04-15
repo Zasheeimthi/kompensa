@@ -1123,8 +1123,8 @@ body button:hover {
 
 .banner_area .theme_btn:hover,
 .banner_area .theme_btn:focus {
-    background: #fc397d;
-    color: #fff;
+    background: #003479;
+    color: #fff !important;
     box-shadow: 0px 45px 75px 0px rgba(103, 103, 105, 0.35);
 }
 
