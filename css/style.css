@@ -4059,6 +4059,13 @@ li.mobile-menu {
     display: none !important;
 }
 
+@media (min-width: 575px) and (max-width: 992px) {
+    li.mobile-menu {
+        display: block !important;
+        padding: 10px;
+    }
+}
+
 @media (max-width: 575px) {
     .main_header_area .navbar .right_nav li a {
         color: #fff;
@@ -4267,9 +4274,9 @@ button.navbar-toggler {
     }
 }
 
-.ba_2 {
-    /* background: linear-gradient(135deg, #003479, #0061E2) !important; */
-}
+/* .ba_2 {
+    background: linear-gradient(135deg, #003479, #0061E2) !important;
+} */
 
 .main_header_area {
     padding-top: 20px;
