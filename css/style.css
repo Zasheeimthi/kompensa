@@ -4237,13 +4237,14 @@ li.mobile-menu {
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .main_header_area .navbar .navbar_supported ul li a {
-    margin: 0px 15px !important;
+    margin: 0px 14px !important;
     font-size: 15px !important;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
-    .main_header_area .navbar .navbar_supported {
-        margin-left: 60px !important;
+   
+    .main_header_area .navbar .navbar_supported ul li a {
+      margin: 0px 16px;
     }
 }
 @media (min-width: 1400px) {
