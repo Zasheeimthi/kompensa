@@ -2031,7 +2031,7 @@ body button:hover {
 
 .powerful_features .screen_conent .creating_list li {
   display: block;
-  padding-left: 55px;
+  /* padding-left: 55px; */
   position: relative;
   font: 400 16px/28px "spoofTrial-Regular", sans-serif;
   color: rgba(40, 35, 49, 0.8);
@@ -2045,7 +2045,7 @@ body button:hover {
   left: 0;
   width: 33px;
   height: 1px;
-  background: #fc396b;
+  /* background: #fc396b; */
 }
 
 .powerful_features .screen_conent .theme_btn {
