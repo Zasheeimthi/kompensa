@@ -4234,6 +4234,10 @@ li.mobile-menu {
     display: block !important;
     padding: 10px;
   }
+  .screen_col2{
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .main_header_area .navbar .navbar_supported ul li a {
