@@ -561,7 +561,7 @@ body button:hover {
   width: 100%;
   z-index: 999;
   position: absolute;
-  padding: 75px 205px 0;
+  padding: 75px 125px 0;
 }
 
 .main_header_area .navbar {
