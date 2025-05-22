@@ -29,14 +29,14 @@
     html {
         scroll-behavior: smooth;
     }
-
+    
     .floating-element {
         position: absolute;
         border-radius: 50%;
         opacity: 0.6;
         animation: float 15s infinite linear;
     }
-
+    
     .element-1 {
         width: 100px;
         height: 100px;
@@ -45,7 +45,7 @@
         left: 10%;
         animation-duration: 20s;
     }
-
+    
     .element-2 {
         width: 70px;
         height: 70px;
@@ -54,7 +54,7 @@
         right: 50%;
         animation-duration: 25s;
     }
-
+    
     .element-3 {
         width: 150px;
         height: 150px;
@@ -63,9 +63,8 @@
         left: 25%;
         animation-duration: 30s;
     }
-
     /* Wave Animation at Bottom */
-
+    
     .wave {
         position: absolute;
         bottom: 0;
@@ -77,75 +76,68 @@
         background-repeat: no-repeat;
         animation: wave 10s infinite linear;
     }
-
     /* Animations */
-
+    
     @keyframes float {
         0% {
             transform: translate(0, 0) rotate(0deg);
         }
-
         50% {
             transform: translate(100px, 50px) rotate(180deg);
         }
-
         100% {
             transform: translate(0, 0) rotate(360deg);
         }
     }
-
+    
     @keyframes wave {
         0% {
             background-position-x: 0;
         }
-
         100% {
             background-position-x: 1440px;
         }
     }
-
+    
     @keyframes pulse {
         0% {
             transform: scale(1);
         }
-
         50% {
             transform: scale(1.05);
         }
-
         100% {
             transform: scale(1);
         }
     }
-
+    
     @keyframes fadeInUp {
         from {
             opacity: 0;
             transform: translateY(20px);
         }
-
         to {
             opacity: 1;
             transform: translateY(0);
         }
     }
-
+    
     .popup-overlay {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(0, 0, 0, 0.4);
+        background: rgba(0, 0, 0, 0.6);
         z-index: 9999;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-
+    
     .popup-box {
         background: #0A3576;
-        border: 2px solid white;
+        /* border: 2px solid white; */
         border-radius: 16px;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
         max-width: 600px;
@@ -156,23 +148,27 @@
         flex-direction: row;
         overflow: hidden;
     }
-
+    
     .popup-close {
         position: absolute;
-        top: 16px;
-        right: 16px;
-        background: none;
+        top: 0px;
+        right: 0px;
+        background: #fff;
         border: none;
-        color: #fff;
+        color: #003479;
         font-size: 2rem;
         cursor: pointer;
+        line-height: 20px;
+        width: 30px;
+        height: 30px;
+        border-radius: 40px;
     }
-
+    
     .popup-content {
         display: flex;
         width: 100%;
     }
-
+    
     .popup-image {
         background: #fff;
         padding: 24px;
@@ -180,12 +176,12 @@
         align-items: center;
         justify-content: center;
     }
-
+    
     .popup-image img {
         max-width: 160px;
         border-radius: 8px;
     }
-
+    
     .popup-form {
         padding: 32px 24px;
         color: #fff;
@@ -194,13 +190,13 @@
         flex-direction: column;
         justify-content: center;
     }
-
+    
     .popup-form h2 {
-        font-size: 1.3rem;
+        font-size: 18px;
         margin-bottom: 16px;
         font-weight: bold;
     }
-
+    
     #popup-email {
         width: 100%;
         padding: 12px;
@@ -209,7 +205,7 @@
         margin-bottom: 16px;
         font-size: 1rem;
     }
-
+    
     #popup-submit {
         width: 100%;
         padding: 12px;
@@ -222,37 +218,46 @@
         cursor: pointer;
         margin-bottom: 16px;
     }
-
+    
     #popup-thankyou {
         margin-top: 8px;
         color: #fff;
     }
-
+    
     @media (max-width: 600px) {
+        .popup-close {
+            width: 20px !important;
+            height: 20px !important;
+            font-size: 14px !important;
+            line-height: 14px !important;
+            top: 0px !important;
+            right: 5px !important;
+        }
+        h2#popup-heading {
+            font-size: 18px !important;
+        }
+        .popup-image {
+            display: none;
+        }
         .popup-content {
             flex-direction: column;
         }
-
         .popup-image {
             justify-content: center;
             padding: 8px;
         }
-
         .popup-form {
             padding: 20px;
         }
-
         .popup-box {
             max-width: 85vw;
             width: 85vw;
             min-width: unset;
             padding: 0;
         }
-
         .popup-image img {
             max-width: 100px;
         }
-
         .popup-close {
             color: #0A3576 !important;
             background: #fff !important;
@@ -275,11 +280,10 @@
     <header class="main_header_area">
         <nav class="navbar navbar-expand-lg">
             <div class="navbar-brand">
-                <a class="logo" href="./"><img src="images/kompensa-logo.svg" alt /></a>
+                <a class="logo" href="./"><img src="images/kompensa logo.svg" alt / style="width: 170px;"></a>
             </div>
             <!-- Small Divice Menu-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar_supported"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar_supported" aria-label="Toggle navigation">
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </button>
             <!-- Left Nav bar -->
@@ -410,11 +414,8 @@
                 <h2 class="pb-20">Så funkar Kompensa – ersättning utan krångel</h2>
 
                 <p>
-                    Kompensa är din digitala assistent för tågförseningar och inställda avgångar. Appen identifierar
-                    automatiskt vilka av dina resor som är ersättningsberättigade och hjälper dig skicka in din ansökan
-                    snabbt och smidigt, utan onödigt krångel. Allt sker direkt
-                    i appen, oavsett vilket tågbolag du har rest med. Med hjälp av våra smarta funktioner blir processen
-                    enkel från start till mål – du klickar, vi fixar resten.
+                    Kompensa är din digitala assistent för tågförseningar och inställda avgångar. Appen identifierar automatiskt vilka av dina resor som är ersättningsberättigade och hjälper dig skicka in din ansökan snabbt och smidigt, utan onödigt krångel. Allt sker direkt
+                    i appen, oavsett vilket tågbolag du har rest med. Med hjälp av våra smarta funktioner blir processen enkel från start till mål – du klickar, vi fixar resten.
                 </p>
             </div>
             <h2 class="pb-30">Varför väljer resenärer Kompensa?</h2>
@@ -425,8 +426,8 @@
                     <div class="experience">
                         <img src="images/1.svg" style="max-width: 100px" />
                         <a href="#" class="heding">Val av favoritväg</a>
-                        <p>Användaren väljer två platser för appen att automatiskt visa aktuella förseningar på just den
-                            rutten.</p>
+                        <p>Användaren väljer två platser för appen att automatiskt visa aktuella förseningar på just den rutten.
+                        </p>
                         <!-- <p>välj två platser, se förseningar direkt</p> -->
                     </div>
                 </div>
@@ -455,8 +456,7 @@
                     <div class="experience">
                         <img src="images/operator.svg" style="max-width: 100px" />
                         <a href="#" class="heding">Alla operatörer på ett ställe</a>
-                        <p>Oavsett om du rest med SJ, Mälartåg , Skånetrafiken eller annan operatör – du gör allt i
-                            Kompensas app.</p>
+                        <p>Oavsett om du rest med SJ, Mälartåg , Skånetrafiken eller annan operatör – du gör allt i Kompensas app.</p>
                     </div>
                 </div>
                 <!-- Experience -->
@@ -464,8 +464,8 @@
                     <div class="experience">
                         <img src="images/history.svg" style="max-width: 100px" />
                         <a href="#" class="heding">Sparad förseningshistorik </a>
-                        <p>Vi sparar förseningsdata i upp till 90 dagar, så att du kan ansöka om ersättning även i
-                            efterhand</p>
+                        <p>Vi sparar förseningsdata i upp till 90 dagar, så att du kan ansöka om ersättning även i efterhand
+                        </p>
                     </div>
                 </div>
                 <!-- Experience -->
@@ -523,22 +523,17 @@
                     <!-- <p>Every product must make a statement and we're ready to create it with holistic approach to design. We believe that payments is a problem rooted in code, not finance. We obsessively seek out elegant, </p> -->
                     <ul class="creating_list">
                         <li>
-                            <span class="heading">1. Logga in med BankID</span> <br />Kom igång direkt med en trygg och
-                            säker inloggning.
+                            <span class="heading">1. Logga in med BankID</span> <br />Kom igång direkt med en trygg och säker inloggning.
                         </li>
                         <li>
-                            <span class="heading">2. Skapa din profil</span> <br /> Fyll i dina uppgifter och
-                            biljett/periodkortsnummer en gång. Vi sparar dem säkert för framtida ansökningar.
+                            <span class="heading">2. Skapa din profil</span> <br /> Fyll i dina uppgifter och biljett/periodkortsnummer en gång. Vi sparar dem säkert för framtida ansökningar.
                         </li>
                         <li>
                             <span class="heading">3. Se förseningar automatiskt</span>
-                            <br />Välj två orter du ofta reser mellan. Appen visar direkt vilka resor som är
-                            ersättningsberättigade och visar förseningar i upp till 90 dagar.
+                            <br />Välj två orter du ofta reser mellan. Appen visar direkt vilka resor som är ersättningsberättigade och visar förseningar i upp till 90 dagar.
                         </li>
                         <li>
-                            <span class="heading">4. Skicka in din ansökan</span> <br />Vi fyller i all information åt
-                            dig. Lägg till eventuella utlägg som taxi, mat eller hotell och skicka in ansökan.
-                            Operatören hanterar ärendet, oftast inom 24 timmar
+                            <span class="heading">4. Skicka in din ansökan</span> <br />Vi fyller i all information åt dig. Lägg till eventuella utlägg som taxi, mat eller hotell och skicka in ansökan. Operatören hanterar ärendet, oftast inom 24 timmar
                             samt bekräftar via e-post.
                         </li>
                     </ul>
@@ -614,8 +609,7 @@
                             </tr>
                             <tr>
                                 <td colspan="3" style="height: 10vh">
-                                    <span style="color: red">*</span> Inga dolda avgifter. Vid uppsägning betalar du
-                                    endast för den påbörjade månaden.
+                                    <span style="color: red">*</span> Inga dolda avgifter. Vid uppsägning betalar du endast för den påbörjade månaden.
                                 </td>
                             </tr>
                         </tbody>
@@ -739,8 +733,7 @@
                         <div class="faq-question">Vad gör Kompensa?</div>
                         <div class="faq-answer">
                             <p>
-                                Vi hjälper dig att skicka in kompensationsansökningar för tågförseningar och inställda
-                                tåg – snabbt, enkelt och samlat i en app.
+                                Vi hjälper dig att skicka in kompensationsansökningar för tågförseningar och inställda tåg – snabbt, enkelt och samlat i en app.
                             </p>
                         </div>
                     </div>
@@ -769,9 +762,7 @@
                         </div>
                         <div class="faq-answer">
                             <p>
-                                Ja, det går bra. I samband med din ansökan kan du bifoga kvitton för eventuella utlägg
-                                som uppstått på grund av förseningen – till exempel taxi, mat eller hotell. Appen guidar
-                                dig steg för steg.
+                                Ja, det går bra. I samband med din ansökan kan du bifoga kvitton för eventuella utlägg som uppstått på grund av förseningen – till exempel taxi, mat eller hotell. Appen guidar dig steg för steg.
                             </p>
                         </div>
                     </div>
@@ -782,8 +773,7 @@
                         </div>
                         <div class="faq-answer">
                             <p>
-                                Kompensa filtrerar automatiskt bort resor som inte är ersättningsberättigade , så du ser
-                                bara de förseningar där du faktiskt kan få kompensation för.
+                                Kompensa filtrerar automatiskt bort resor som inte är ersättningsberättigade , så du ser bara de förseningar där du faktiskt kan få kompensation för.
                             </p>
                             <p>Grunden för ersättning bygger på EU:s regler:</p>
                             <p>För tåg som kör 150 km eller längre:</p>
@@ -802,8 +792,7 @@
                         </div>
                         <div class="faq-answer">
                             <p>
-                                Nej, inte om du använder Premium. Då kan du skicka in hur många ansökningar du vill. Med
-                                Basic betalar du 10 kr per ansökan.
+                                Nej, inte om du använder Premium. Då kan du skicka in hur många ansökningar du vill. Med Basic betalar du 10 kr per ansökan.
                             </p>
                         </div>
                     </div>
@@ -812,12 +801,10 @@
                         <div class="faq-question">När betalas avgiften för en ansökan?</div>
                         <div class="faq-answer">
                             <p>
-                                Om du använder Basic betalas avgiften (10 kr) i samband med att du skickar in en
-                                ansökan.
+                                Om du använder Basic betalas avgiften (10 kr) i samband med att du skickar in en ansökan.
                             </p>
                             <p>
-                                För Premium är det en fast månadsavgift på 69 kr som betalas i början av varje månad via
-                                App Store eller Google Play.
+                                För Premium är det en fast månadsavgift på 69 kr som betalas i början av varje månad via App Store eller Google Play.
                             </p>
                         </div>
                     </div>
@@ -827,9 +814,7 @@
                         </div>
                         <div class="faq-answer">
                             <p>
-                                Det finns ingen uppsägningstid. Du kan när som helst avsluta din prenumeration via App
-                                Store eller Google Play. Du betalar endast för den påbörjade månaden – inga dolda
-                                avgifter eller framtida kostnader.
+                                Det finns ingen uppsägningstid. Du kan när som helst avsluta din prenumeration via App Store eller Google Play. Du betalar endast för den påbörjade månaden – inga dolda avgifter eller framtida kostnader.
                             </p>
                         </div>
                     </div>
@@ -839,8 +824,7 @@
                         </div>
                         <div class="faq-answer">
                             <p>
-                                Ja, du får en bekräftelse i appen när din ansökan har skickats. Besked om din
-                                kompensation brukar komma från tågoperatören inom 24 timmar.
+                                Ja, du får en bekräftelse i appen när din ansökan har skickats. Besked om din kompensation brukar komma från tågoperatören inom 24 timmar.
                             </p>
                         </div>
                     </div>
@@ -860,8 +844,7 @@
                         </div>
                         <div class="faq-answer">
                             <p>
-                                De flesta operatörer svarar inom 24 timmar, men ibland kan det ta längre tid. Om du inte
-                                hört något efter några dagar kan du kontakta dem direkt – eller be oss om hjälp.
+                                De flesta operatörer svarar inom 24 timmar, men ibland kan det ta längre tid. Om du inte hört något efter några dagar kan du kontakta dem direkt – eller be oss om hjälp.
                             </p>
                         </div>
                     </div>
@@ -871,13 +854,10 @@
                         </div>
                         <div class="faq-answer">
                             <p>
-                                Om operatören avslår din ansökan får du ett meddelande via e-post direkt från dem.
-                                Fortsatt kontakt sker mellan dig och operatören via e-post, men vi finns alltid här för
-                                att stötta dig.
+                                Om operatören avslår din ansökan får du ett meddelande via e-post direkt från dem. Fortsatt kontakt sker mellan dig och operatören via e-post, men vi finns alltid här för att stötta dig.
                             </p>
                             <p>
-                                Behöver du hjälp med att förstå avslaget eller vill ha vägledning kring en överklagan?
-                                Hör av dig så hjälper vi gärna till.
+                                Behöver du hjälp med att förstå avslaget eller vill ha vägledning kring en överklagan? Hör av dig så hjälper vi gärna till.
                             </p>
                         </div>
                     </div>
@@ -885,8 +865,7 @@
                         <div class="faq-question">Gör Kompensa utbetalningarna?</div>
                         <div class="faq-answer">
                             <p>
-                                Nej, det gör tågoperatören – vi effektiviserar bara själva ansökan och ser till att rätt
-                                uppgifter skickas in.
+                                Nej, det gör tågoperatören – vi effektiviserar bara själva ansökan och ser till att rätt uppgifter skickas in.
                             </p>
                         </div>
                     </div>
@@ -894,8 +873,7 @@
                         <div class="faq-question">Är det säkert att använda appen?</div>
                         <div class="faq-answer">
                             <p>
-                                Ja, vi använder BankID för säker inloggning och följer GDPR. Dina personuppgifter lagras
-                                krypterat och hanteras med största försiktighet.
+                                Ja, vi använder BankID för säker inloggning och följer GDPR. Dina personuppgifter lagras krypterat och hanteras med största försiktighet.
                             </p>
                         </div>
                     </div>
@@ -932,8 +910,7 @@
                     <p>
                         Berätta vad du behöver hjälp med – Vi är bara ett formulär bort.
                     </p>
-                    <form class="solve_from row" action="php/contact.php" method="post" id="phpcontactform"
-                        novalidate="novalidate">
+                    <form class="solve_from row" action="php/contact.php" method="post" id="phpcontactform" novalidate="novalidate">
                         <div class="form-group col-md-6">
                             <input type="text" class="form-control" id="name" name="name" placeholder="Namn *" />
                         </div>
@@ -941,23 +918,19 @@
                             <input type="email" class="form-control" id="email" name="email" placeholder="E-Post *" />
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="name" name="name"
-                                placeholder="Företagsnamn *" />
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Företagsnamn *" />
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="email" class="form-control" id="email" name="email"
-                                placeholder="Mobilnummer *" />
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Mobilnummer *" />
                         </div>
                         <div class="form-group col-12">
-                            <textarea class="form-control" id="message" name="message"
-                                placeholder="Meddelande *"></textarea>
+                            <textarea class="form-control" id="message" name="message" placeholder="Meddelande *"></textarea>
                         </div>
                         <div class="form-group col-12">
                             <button class="theme_btn1" id="js-contact-btn" type="submit">
                                 Skicka
                             </button>
-                            <div id="js-contact-result" data-success-msg="Form submitted successfully."
-                                data-error-msg="Messages Successfully"></div>
+                            <div id="js-contact-result" data-success-msg="Form submitted successfully." data-error-msg="Messages Successfully"></div>
                         </div>
                     </form>
                 </div>
@@ -1002,14 +975,11 @@
         <div class="container">
             <div class="footer_inner row">
                 <div class="col-lg-3 col-sm-6 footer_logo wow fadeIn">
-                    <a href="index.html"><img src="images/kompensa-logo.svg" alt /></a>
+                    <a href="index.html"><img src="images/kompensa logo.svg" alt / style="width: 170px;"></a>
                     <div style="padding-top: 30px">
-                        <a href="https://www.facebook.com/share/12FoBSVrwod/?mibextid=wwXIfr " target="_blank"><img
-                                src="images/fb.svg" width="40px" alt /></a>&nbsp;&nbsp;
-                        <a href="https://www.instagram.com/kompensa.se?igsh=MWtsbzFpaHozNHE3Zw== " target="_blank"><img
-                                src="images/insta.svg" width="40px" alt /></a>&nbsp;&nbsp;
-                        <a href="https://www.tiktok.com/@kompensa.se?_t=ZN-8wXMcK3WVxW&_r=1 " target="_blank"><img
-                                src="images/tiktok.svg" width="40px" alt /></a>
+                        <a href="https://www.facebook.com/share/12FoBSVrwod/?mibextid=wwXIfr " target="_blank"><img src="images/fb.svg" width="40px" alt /></a>&nbsp;&nbsp;
+                        <a href="https://www.instagram.com/kompensa.se?igsh=MWtsbzFpaHozNHE3Zw== " target="_blank"><img src="images/insta.svg" width="40px" alt /></a>&nbsp;&nbsp;
+                        <a href="https://www.tiktok.com/@kompensa.se?_t=ZN-8wXMcK3WVxW&_r=1 " target="_blank"><img src="images/tiktok.svg" width="40px" alt /></a>
                     </div>
                 </div>
                 <div class="footer_widget col-lg-3 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
@@ -1113,7 +1083,7 @@
             <button class="popup-close" id="popup-close-btn">&times;</button>
             <div class="popup-content">
                 <div class="popup-image">
-                    <img src="images/banner-img-3.png" alt="Train" />
+                    <img src="images/train_popup.svg" alt="Train" />
                 </div>
                 <div class="popup-form">
                     <h2 id="popup-heading">Vill du få ett mejl när appen är live?</h2>
@@ -1129,17 +1099,17 @@
 
     <script>
         // Show popup on every page load
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('email-popup-overlay').style.display = 'flex';
         });
 
         // Close popup
-        document.getElementById('popup-close-btn').onclick = function () {
+        document.getElementById('popup-close-btn').onclick = function() {
             document.getElementById('email-popup-overlay').style.display = 'none';
         };
 
         // Handle form submit
-        document.getElementById('popup-submit').onclick = function () {
+        document.getElementById('popup-submit').onclick = function() {
             var email = document.getElementById('popup-email').value;
             if (email && email.includes('@')) {
                 document.getElementById('popup-thankyou').style.display = 'block';
